@@ -112,7 +112,7 @@ export function getCoverageTable(
     ])
   }
 
-  return COVERAGE_HEADER + table(rows, { align: ["l", "r", "r", "r", "r"] })
+  return COVERAGE_HEADER + "<details>\n\n" + table(rows, { align: ["l", "r", "r", "r", "r"] }) + "\n\n</details>"
 }
 
 function getCommentPayload(body: string) {
